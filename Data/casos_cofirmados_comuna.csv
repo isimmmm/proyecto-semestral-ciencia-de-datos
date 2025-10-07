@@ -1,0 +1,213 @@
+Comuna,Año,Casos confirmados
+Alhue,2020,16778.0
+Alhue,2021,70930.0
+Alhue,2022,191187.0
+Alhue,2023,5597.0
+Buin,2020,160555.0
+Buin,2021,898107.0
+Buin,2022,2308531.0
+Buin,2023,58051.0
+Calera de Tango,2020,35802.0
+Calera de Tango,2021,203809.0
+Calera de Tango,2022,531667.0
+Calera de Tango,2023,13702.0
+Cerrillos,2020,189656.0
+Cerrillos,2021,739728.0
+Cerrillos,2022,1678733.0
+Cerrillos,2023,41961.0
+Cerro Navia,2020,401463.0
+Cerro Navia,2021,1585665.0
+Cerro Navia,2022,2956795.0
+Cerro Navia,2023,67932.0
+Colina,2020,286992.0
+Colina,2021,1290457.0
+Colina,2022,3356976.0
+Colina,2023,84502.0
+Conchali,2020,381377.0
+Conchali,2021,1320642.0
+Conchali,2022,2668503.0
+Conchali,2023,63378.0
+Curacavi,2020,59208.0
+Curacavi,2021,320966.0
+Curacavi,2022,853898.0
+Curacavi,2023,22076.0
+Desconocido Metropolitana,2020,812408.0
+Desconocido Metropolitana,2021,1429622.0
+Desconocido Metropolitana,2022,1348189.0
+Desconocido Metropolitana,2023,25328.0
+El Bosque,2020,396020.0
+El Bosque,2021,1828017.0
+El Bosque,2022,3671688.0
+El Bosque,2023,87215.0
+El Monte,2020,72478.0
+El Monte,2021,339973.0
+El Monte,2022,772680.0
+El Monte,2023,19341.0
+Estacion Central,2020,386302.0
+Estacion Central,2021,1601047.0
+Estacion Central,2022,3460859.0
+Estacion Central,2023,82096.0
+Huechuraba,2020,238882.0
+Huechuraba,2021,892688.0
+Huechuraba,2022,2199743.0
+Huechuraba,2023,56266.0
+Independencia,2020,406627.0
+Independencia,2021,1326283.0
+Independencia,2022,2556388.0
+Independencia,2023,59870.0
+Isla de Maipo,2020,67977.0
+Isla de Maipo,2021,350207.0
+Isla de Maipo,2022,900883.0
+Isla de Maipo,2023,22690.0
+La Cisterna,2020,203745.0
+La Cisterna,2021,892012.0
+La Cisterna,2022,1997682.0
+La Cisterna,2023,49608.0
+La Florida,2020,851078.0
+La Florida,2021,3712626.0
+La Florida,2022,8521008.0
+La Florida,2023,216278.0
+La Granja,2020,428519.0
+La Granja,2021,1507634.0
+La Granja,2022,2681062.0
+La Granja,2023,62133.0
+La Pintana,2020,628278.0
+La Pintana,2021,2311741.0
+La Pintana,2022,3745991.0
+La Pintana,2023,81435.0
+La Reina,2020,141841.0
+La Reina,2021,635915.0
+La Reina,2022,2015970.0
+La Reina,2023,55866.0
+Lampa,2020,216600.0
+Lampa,2021,923247.0
+Lampa,2022,2161794.0
+Lampa,2023,51954.0
+Las Condes,2020,389526.0
+Las Condes,2021,1731797.0
+Las Condes,2022,6258565.0
+Las Condes,2023,171617.0
+Lo Barnechea,2020,211782.0
+Lo Barnechea,2021,864606.0
+Lo Barnechea,2022,2358534.0
+Lo Barnechea,2023,59275.0
+Lo Espejo,2020,265049.0
+Lo Espejo,2021,983972.0
+Lo Espejo,2022,1912778.0
+Lo Espejo,2023,45813.0
+Lo Prado,2020,300299.0
+Lo Prado,2021,1222043.0
+Lo Prado,2022,2341579.0
+Lo Prado,2023,54783.0
+Macul,2020,307312.0
+Macul,2021,1221097.0
+Macul,2022,2855913.0
+Macul,2023,70759.0
+Maipu,2020,919609.0
+Maipu,2021,4125886.0
+Maipu,2022,10282376.0
+Maipu,2023,262898.0
+Maria Pinto,2020,22100.0
+Maria Pinto,2021,131655.0
+Maria Pinto,2022,356650.0
+Maria Pinto,2023,9209.0
+Melipilla,2020,240812.0
+Melipilla,2021,1081159.0
+Melipilla,2022,2499652.0
+Melipilla,2023,60150.0
+Nunoa,2020,349809.0
+Nunoa,2021,1522035.0
+Nunoa,2022,4927797.0
+Nunoa,2023,135438.0
+Padre Hurtado,2020,130988.0
+Padre Hurtado,2021,689334.0
+Padre Hurtado,2022,1650225.0
+Padre Hurtado,2023,40710.0
+Paine,2020,125703.0
+Paine,2021,642272.0
+Paine,2022,1562928.0
+Paine,2023,38011.0
+Pedro Aguirre Cerda,2020,265572.0
+Pedro Aguirre Cerda,2021,1109210.0
+Pedro Aguirre Cerda,2022,2312795.0
+Pedro Aguirre Cerda,2023,56206.0
+Penaflor,2020,175416.0
+Penaflor,2021,795177.0
+Penaflor,2022,2020892.0
+Penaflor,2023,52124.0
+Penalolen,2020,713002.0
+Penalolen,2021,2779274.0
+Penalolen,2022,6274792.0
+Penalolen,2023,156168.0
+Pirque,2020,66813.0
+Pirque,2021,290947.0
+Pirque,2022,694416.0
+Pirque,2023,17507.0
+Providencia,2020,205799.0
+Providencia,2021,888492.0
+Providencia,2022,3249546.0
+Providencia,2023,92201.0
+Pudahuel,2020,601038.0
+Pudahuel,2021,2503012.0
+Pudahuel,2022,5268871.0
+Pudahuel,2023,126468.0
+Puente Alto,2020,1454959.0
+Puente Alto,2021,6361825.0
+Puente Alto,2022,13450481.0
+Puente Alto,2023,329748.0
+Quilicura,2020,558569.0
+Quilicura,2021,1990359.0
+Quilicura,2022,4387950.0
+Quilicura,2023,106728.0
+Quinta Normal,2020,369221.0
+Quinta Normal,2021,1444693.0
+Quinta Normal,2022,3033425.0
+Quinta Normal,2023,72699.0
+Recoleta,2020,525567.0
+Recoleta,2021,1722161.0
+Recoleta,2022,3351819.0
+Recoleta,2023,80509.0
+Renca,2020,528210.0
+Renca,2021,2139472.0
+Renca,2022,3827499.0
+Renca,2023,88517.0
+San Bernardo,2020,685299.0
+San Bernardo,2021,3062261.0
+San Bernardo,2022,6323593.0
+San Bernardo,2023,151786.0
+San Joaquin,2020,308815.0
+San Joaquin,2021,1182573.0
+San Joaquin,2022,2342593.0
+San Joaquin,2023,55871.0
+San Jose de Maipo,2020,40889.0
+San Jose de Maipo,2021,163567.0
+San Jose de Maipo,2022,383680.0
+San Jose de Maipo,2023,9738.0
+San Miguel,2020,325899.0
+San Miguel,2021,1381667.0
+San Miguel,2022,3442813.0
+San Miguel,2023,87708.0
+San Pedro,2020,14548.0
+San Pedro,2021,82190.0
+San Pedro,2022,203196.0
+San Pedro,2023,5042.0
+San Ramon,2020,275643.0
+San Ramon,2021,974815.0
+San Ramon,2022,1753755.0
+San Ramon,2023,40635.0
+Santiago,2020,939103.0
+Santiago,2021,3899492.0
+Santiago,2022,11079721.0
+Santiago,2023,282536.0
+Talagante,2020,104922.0
+Talagante,2021,476645.0
+Talagante,2022,1412147.0
+Talagante,2023,37071.0
+Tiltil,2020,34544.0
+Tiltil,2021,161208.0
+Tiltil,2022,402055.0
+Tiltil,2023,10315.0
+Vitacura,2020,101765.0
+Vitacura,2021,473299.0
+Vitacura,2022,1633093.0
+Vitacura,2023,44050.0
