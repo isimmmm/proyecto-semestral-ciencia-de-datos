@@ -4,7 +4,7 @@ En esta carpeta se encuentra la información seleccionada y ordenada en distinto
 
 ## Contenido
 
--[Intalación](#intalacion)
+-[Instalación](#instalacion)
 -[Archivos](#archivos)
 
 ## Instalación
