@@ -13,45 +13,46 @@ La encuesta en cuenta con una nueva medición de la pobreza multidimensional, la
 Los archivos originales de los datos estan en formato STATA por lo que se debio leer y transformar en formato csv mediante pandas para mayor comodidad, por lo que si se desea acceder a la base de datos puede hacerlo mediante los siguientes links: 
 - CASEN EN PANDEMIA 2020 : https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-en-pandemia-2020
 - CASEN 2022 : https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2022
+
 Por otro lado la limpieza de los datos y la creacion de los dataframes se puede realizar en los notebooks disponibles en cada seccion de las carpetas.
 
 # Arachivos Datos Pandemia 2020 - 2021
-* CASEN_PANDEMIA_2020.csv : Dataframe original en csv.
-* CASE_PANDEMIA_POBREZA_GEOGRAFICA_2020.csv : Dataframe creado a partir del original con varibles de interes para el proyecto. Presenta las siguientes variables:
- - folio - Identificador único del hogar
- - id_persona - Identificador de persona dentro del hogar
- - provincia - Código de provincia
- - comuna - Código de comuna
- - pobreza - Situación de pobreza por ingresos (1 = Indigente, 2 = Pobre no indigente, 3 = No pobre)
- - pobreza_sinte - Pobreza con ajuste por pandemia
- - lp - Línea de pobreza 2020
- - li - Línea de indigencia 2020
- - nse_aproximado - Nivel socioeconómico estimado ('E' = Indigente/Pobre (NSE bajo), 'D' = Pobre no indigente (NSE medio bajo), 'C2-C1' = Clase media (NSE medio), 'AB' = Clase media alta/alta (NSE alto))
- - edad - Edad de la persona
- - sexo - Sexo de la persona (1 = Hombre, 2 = Mujer)
- - ytotcorh - Ingreso total del hogar corregido
- - yoprcorh - Ingreso del trabajo principal del hogar corregido
- - expr - Factor de expansión regional
+- CASEN_PANDEMIA_2020.csv : Dataframe original en csv.
+- CASE_PANDEMIA_POBREZA_GEOGRAFICA_2020.csv : Dataframe creado a partir del original con varibles de interes para el proyecto. Presenta las siguientes variables:
+   * folio - Identificador único del hogar
+   * id_persona - Identificador de persona dentro del hogar
+   * provincia - Código de provincia
+   * comuna - Código de comuna
+   * pobreza - Situación de pobreza por ingresos (1 = Indigente, 2 = Pobre no indigente, 3 = No pobre)
+   * pobreza_sinte - Pobreza con ajuste por pandemia
+   * lp - Línea de pobreza 2020
+   * li - Línea de indigencia 2020
+   * nse_aproximado - Nivel socioeconómico estimado ('E' = Indigente/Pobre (NSE bajo), 'D' = Pobre no indigente (NSE medio bajo), 'C2-C1' = Clase media (NSE medio), 'AB' = Clase media alta/alta (NSE alto))
+   * edad - Edad de la persona
+   * sexo - Sexo de la persona (1 = Hombre, 2 = Mujer)
+   * ytotcorh - Ingreso total del hogar corregido
+   * yoprcorh - Ingreso del trabajo principal del hogar corregido
+   * expr - Factor de expansión regional
 
 # Archivos Datos Post-Pandemia 2022 - 2023
-* CASEN_2022.csv : Dataframe original en csv.
-* CASEN_GEOGRAFICO.csv : Dataframe en formato csv, que contiene los datos geograficos de CASEN_2022.csv, presenta las siguientes variables:
- - folio - Identificador único del hogar
- - id_persona - Identificador de persona dentro del hogar
- - provincia - Código de provincia
- - comuna - Código de comuna
- - expp - Factor de expansión a nivel persona
- - expc - Factor de expansión a nivel comunal
-- * CASEN_POBREZA_2022.csv : Dataframe en formato csv, que contiene los datos socioeconomicos de CASEN_2022.csv, presenta las siguientes variables:
- - pobreza - Situación de pobreza por ingresos (1 = Indigente, 2 = Pobre no indigente, 3 = No pobre)
- - pobreza_multi_5d - Pobreza multidimensional (5 dimensiones:)
- - lp - Línea de pobreza
- - li - Línea de indigencia
- - nse - Nivel socioeconómico (1 = Bajo (E), 2 = Medio bajo (D), 3 = Medio (C3), 4 = Medio alto (C2-C1), 5 = Alto (AB))
- - region - Región
- - edad - Edad de la persona
- - sexo - Sexo de la persona (1 = Hombre, 2 = Mujer)
- - ytotcorh - Ingreso total del hogar corregido
- - yoprcorh - Ingreso del trabajo principal del hogar corregido
- - expr - Factor de expansión regional
-- * CASE_POBREZA_GEOGRAFICA_2022.csv : Dataframe unido con CASEN_POBREZA_2022.csv y CASEN_GEOGRAFICO.csv, que presenta las mismas variables mencionadas anteriormente.
+- CASEN_2022.csv : Dataframe original en csv.
+- CASEN_GEOGRAFICO.csv : Dataframe en formato csv, que contiene los datos geograficos de CASEN_2022.csv, presenta las siguientes variables:
+   * folio - Identificador único del hogar
+   * id_persona - Identificador de persona dentro del hogar
+   * provincia - Código de provincia
+   * comuna - Código de comuna
+   * expp - Factor de expansión a nivel persona
+   * expc - Factor de expansión a nivel comunal
+ - CASEN_POBREZA_2022.csv : Dataframe en formato csv, que contiene los datos socioeconomicos de CASEN_2022.csv, presenta las siguientes variables:
+   * pobreza - Situación de pobreza por ingresos (1 = Indigente, 2 = Pobre no indigente, 3 = No pobre)
+   * pobreza_multi_5d - Pobreza multidimensional (5 dimensiones:)
+   * lp - Línea de pobreza
+   * li - Línea de indigencia
+   * nse - Nivel socioeconómico (1 = Bajo (E), 2 = Medio bajo (D), 3 = Medio (C3), 4 = Medio alto (C2-C1), 5 = Alto (AB))
+   * region - Región
+   * edad - Edad de la persona
+   * sexo - Sexo de la persona (1 = Hombre, 2 = Mujer)
+   * ytotcorh - Ingreso total del hogar corregido
+   * yoprcorh - Ingreso del trabajo principal del hogar corregido
+   * expr - Factor de expansión regional
+ - CASE_POBREZA_GEOGRAFICA_2022.csv : Dataframe unido con CASEN_POBREZA_2022.csv y CASEN_GEOGRAFICO.csv, que presenta las mismas variables mencionadas anteriormente.
