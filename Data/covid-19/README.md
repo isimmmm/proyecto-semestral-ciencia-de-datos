@@ -32,3 +32,5 @@ Los archivos .csv que se crean, a partir del notebook "limpieza.ipynb", son los 
 - *positividad_test_covid19* - Por comuna perteneciente a la Región Metropolitana, de forma individual, por año del 2020-2022, se muestran el total de casos positivos confirmados por test PCR con covid-19.
 
 - *transacciones_bip_por_comuna* - Por comuna perteneciente a la Región Metropolitana, de forma individual, en el 2020, se muestran las transacciones hechas por la tarjeta BIP de movilidad de transporte público. 
+
+- *covid-19_datos_por_comuna* - Dataframe que contiene todos los datos recolectados anteriormente, haciéndoles .merge() por año y comuna. Datos faltantes de los archivos .csv leídos con anterioridad, son rellenados con NaN.
