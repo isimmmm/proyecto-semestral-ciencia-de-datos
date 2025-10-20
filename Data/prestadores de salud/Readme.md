@@ -1,6 +1,6 @@
 # Prestadores de Salud y Egresos Hospitalarios (ISAPRE y FONASA)
 
-## 📁 Contenido Carpeta
+## Contenido Carpeta
 En esta carpeta se encuentra el notebook `notebook.ipynb`, que corresponde al análisis de los **prestadores de salud** (sistema público y privado) y la **cantidad de egresos hospitalarios** durante el periodo de pandemia.  
 Los datos utilizados provienen de las fuentes oficiales indicadas en la propuesta del proyecto:
 
@@ -11,7 +11,7 @@ El objetivo de este módulo es comparar ambos sistemas para observar **diferenci
 
 ---
 
-## 🧾 Base de Datos
+## Base de Datos
 
 Los archivos utilizados corresponden a registros oficiales del sistema público y privado de salud en Chile. Estos contienen datos estructurados en formato `.csv` y `.xlsx` con variables como:
 
@@ -28,7 +28,7 @@ Los archivos utilizados corresponden a registros oficiales del sistema público 
 
 ---
 
-## ⚙️ Instalación y Limpieza
+## Instalación y Limpieza
 
 Para ejecutar el notebook correctamente:
 
@@ -45,7 +45,7 @@ Durante la limpieza se realizaron los siguientes pasos:
 
 ---
 
-## 📊 Análisis y Visualización
+## Análisis y Visualización
 
 El análisis incluye:
 - **Gráficos comparativos** de cantidad de egresos entre **ISAPRE y FONASA**  
@@ -58,7 +58,7 @@ Se utilizan las bibliotecas:
 
 ---
 
-## 📂 Archivos
+## Archivos
 
 | Archivo | Descripción |
 |----------|--------------|
