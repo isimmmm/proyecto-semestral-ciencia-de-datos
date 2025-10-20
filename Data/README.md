@@ -2,9 +2,9 @@
 En esta carpeta se encuentran tres subcarpetas que se han utilizado para leer distintas bases de datos que servirán como base de este proyecto. Cada subcarpeta incluye los archivos originales y notebooks de limpieza o procesamiento cuando corresponde.
 
 ## Sub-carpetas
--[Covid-19](#Covid-19)
--[Nivel socioeconomico y geografico](#Nivel socioeconomico y geografico)
--[prestadores de salud](#prestadores de salud)
+— Covid-19
+— Nivel socioeconomico y geografico
+— prestadores de salud
 
 ## Covid-19
 
