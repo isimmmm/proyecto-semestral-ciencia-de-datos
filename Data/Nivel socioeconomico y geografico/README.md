@@ -17,4 +17,12 @@ Los archivos originales de los datos estan en formato STATA por lo que se debio 
 - CASEN EN PANDEMIA 2020 : https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-en-pandemia-2020
 - CASEN 2022 : https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2022
 
-Por otro lado la limpieza de los datos y la creacion de los dataframes se puede realizar en los notebooks disponibles en cada seccion de las carpetas.
+Por otro lado la limpieza de los datos y la creacion de los dataframes se puede realizar en los notebooks disponibles en cada seccion de las carpetas. Si se tiene mas dudas sobre otros tipos de variables consultar con el libro de codigos respectivo a la base de datos, se puede encontrarn en los links previamente compartidos.
+
+# Variables importantes de Dataset_Socio_RM.csv
+ - Pobreza_multidimensional = Esta medida incluye dimensiones como la salud, la educación, el acceso a servicios básicos como agua potable y saneamiento, la calidad de la vivienda y la infraestructura, y otros factores como las redes y cohesión social.(1: Pobreza, 0: No Pobreza).
+ - NSE = Nivel SocioEconomico.
+ - Pobreza_sinte = Situación de pobreza por ingreso sin transferencia Covid (1: Pobres extremos sin transferencia Covid, 2: Pobres no extremos sin transferencia Covid, 3: No pobres sin transferencia Covid).
+ - Sistema_previsional = sistema es mixto y se compone de un componente público administrado por el Fondo Nacional de Salud (FONASA) y un componente privado a través de las Instituciones de Salud Previsional (ISAPRES).
+ - Pobreza Categoria = Situación de pobreza por ingreso.
+
