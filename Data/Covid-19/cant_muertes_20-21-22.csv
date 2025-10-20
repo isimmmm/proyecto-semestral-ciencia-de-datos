@@ -1,0 +1,157 @@
+,Comuna,Año,Fallecidos
+0,Alhue,2020,6.0
+1,Alhue,2021,8.0
+2,Alhue,2022,8.0
+3,Buin,2020,158.0
+4,Buin,2021,132.0
+5,Buin,2022,51.0
+6,Calera de Tango,2020,20.0
+7,Calera de Tango,2021,38.0
+8,Calera de Tango,2022,11.0
+9,Cerrillos,2020,126.0
+10,Cerrillos,2021,130.0
+11,Cerrillos,2022,52.0
+12,Cerro Navia,2020,424.0
+13,Cerro Navia,2021,349.0
+14,Cerro Navia,2022,116.0
+15,Colina,2020,193.0
+16,Colina,2021,162.0
+17,Colina,2022,57.0
+18,Conchali,2020,371.0
+19,Conchali,2021,289.0
+20,Conchali,2022,106.0
+21,Curacavi,2020,29.0
+22,Curacavi,2021,51.0
+23,Curacavi,2022,16.0
+24,El Bosque,2020,341.0
+25,El Bosque,2021,313.0
+26,El Bosque,2022,91.0
+27,El Monte,2020,67.0
+28,El Monte,2021,53.0
+29,El Monte,2022,19.0
+30,Estacion Central,2020,268.0
+31,Estacion Central,2021,235.0
+32,Estacion Central,2022,82.0
+33,Huechuraba,2020,215.0
+34,Huechuraba,2021,195.0
+35,Huechuraba,2022,62.0
+36,Independencia,2020,410.0
+37,Independencia,2021,204.0
+38,Independencia,2022,93.0
+39,Isla de Maipo,2020,42.0
+40,Isla de Maipo,2021,48.0
+41,Isla de Maipo,2022,24.0
+42,La Cisterna,2020,208.0
+43,La Cisterna,2021,207.0
+44,La Cisterna,2022,90.0
+45,La Florida,2020,733.0
+46,La Florida,2021,641.0
+47,La Florida,2022,284.0
+48,La Granja,2020,313.0
+49,La Granja,2021,247.0
+50,La Granja,2022,86.0
+51,La Pintana,2020,503.0
+52,La Pintana,2021,330.0
+53,La Pintana,2022,68.0
+54,La Reina,2020,137.0
+55,La Reina,2021,132.0
+56,La Reina,2022,78.0
+57,Lampa,2020,113.0
+58,Lampa,2021,166.0
+59,Lampa,2022,50.0
+60,Las Condes,2020,480.0
+61,Las Condes,2021,319.0
+62,Las Condes,2022,179.0
+63,Lo Barnechea,2020,113.0
+64,Lo Barnechea,2021,87.0
+65,Lo Barnechea,2022,39.0
+66,Lo Espejo,2020,271.0
+67,Lo Espejo,2021,235.0
+68,Lo Espejo,2022,84.0
+69,Lo Prado,2020,217.0
+70,Lo Prado,2021,200.0
+71,Lo Prado,2022,71.0
+72,Macul,2020,210.0
+73,Macul,2021,190.0
+74,Macul,2022,91.0
+75,Maipu,2020,949.0
+76,Maipu,2021,832.0
+77,Maipu,2022,255.0
+78,Maria Pinto,2020,12.0
+79,Maria Pinto,2021,16.0
+80,Maria Pinto,2022,6.0
+81,Melipilla,2020,176.0
+82,Melipilla,2021,247.0
+83,Melipilla,2022,83.0
+84,Nunoa,2020,419.0
+85,Nunoa,2021,258.0
+86,Nunoa,2022,154.0
+87,Padre Hurtado,2020,96.0
+88,Padre Hurtado,2021,94.0
+89,Padre Hurtado,2022,42.0
+90,Paine,2020,89.0
+91,Paine,2021,81.0
+92,Paine,2022,37.0
+93,Pedro Aguirre Cerda,2020,318.0
+94,Pedro Aguirre Cerda,2021,253.0
+95,Pedro Aguirre Cerda,2022,73.0
+96,Penaflor,2020,177.0
+97,Penaflor,2021,155.0
+98,Penaflor,2022,56.0
+99,Penalolen,2020,475.0
+100,Penalolen,2021,426.0
+101,Penalolen,2022,139.0
+102,Pirque,2020,45.0
+103,Pirque,2021,40.0
+104,Pirque,2022,17.0
+105,Providencia,2020,270.0
+106,Providencia,2021,225.0
+107,Providencia,2022,131.0
+108,Pudahuel,2020,359.0
+109,Pudahuel,2021,305.0
+110,Pudahuel,2022,135.0
+111,Puente Alto,2020,1057.0
+112,Puente Alto,2021,924.0
+113,Puente Alto,2022,305.0
+114,Quilicura,2020,269.0
+115,Quilicura,2021,239.0
+116,Quilicura,2022,84.0
+117,Quinta Normal,2020,273.0
+118,Quinta Normal,2021,234.0
+119,Quinta Normal,2022,98.0
+120,Recoleta,2020,487.0
+121,Recoleta,2021,285.0
+122,Recoleta,2022,111.0
+123,Renca,2020,305.0
+124,Renca,2021,286.0
+125,Renca,2022,80.0
+126,San Bernardo,2020,531.0
+127,San Bernardo,2021,560.0
+128,San Bernardo,2022,169.0
+129,San Joaquin,2020,229.0
+130,San Joaquin,2021,212.0
+131,San Joaquin,2022,61.0
+132,San Jose de Maipo,2020,34.0
+133,San Jose de Maipo,2021,59.0
+134,San Jose de Maipo,2022,25.0
+135,San Miguel,2020,301.0
+136,San Miguel,2021,277.0
+137,San Miguel,2022,108.0
+138,San Pedro,2020,5.0
+139,San Pedro,2021,12.0
+140,San Pedro,2022,5.0
+141,San Ramon,2020,324.0
+142,San Ramon,2021,259.0
+143,San Ramon,2022,60.0
+144,Santiago,2020,542.0
+145,Santiago,2021,416.0
+146,Santiago,2022,161.0
+147,Talagante,2020,107.0
+148,Talagante,2021,120.0
+149,Talagante,2022,54.0
+150,Tiltil,2020,19.0
+151,Tiltil,2021,30.0
+152,Tiltil,2022,10.0
+153,Vitacura,2020,102.0
+154,Vitacura,2021,73.0
+155,Vitacura,2022,59.0
