@@ -68,7 +68,7 @@ Una mayor proporción en FONASA puede reflejar su rol predominante en la atenci�
 
 ---
 
-### Gráfico de barras simples (año 2022)
+### Gráfico de barras simples (años 2020, 2021, 2022)
 **Código correspondiente:** `plt.bar(resumen_2022["Sistema"], resumen_2022["%_COVID_num"], ...)`
 
 **Propósito:**  
