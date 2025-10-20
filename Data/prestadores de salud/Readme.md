@@ -69,10 +69,10 @@ Una mayor proporción en FONASA puede reflejar su rol predominante en la atenci�
 ---
 
 ### Gráfico de barras simples (años 2020, 2021, 2022)
-**Código correspondiente:** `plt.bar(resumen_2022["Sistema"], resumen_2022["%_COVID_num"], ...)`
+**Código correspondiente:** `plt.bar(resumen_202x["Sistema"], resumen_202x["%_COVID_num"], ...)`
 
 **Propósito:**  
-Visualizar la distribución del **porcentaje de egresos por COVID-19** entre los sistemas de salud durante el año 2022.
+Visualizar la distribución del **porcentaje de egresos por COVID-19** entre los sistemas de salud durante cada año.
 
 **Justificación:**  
 - El gráfico de barras es ideal para **comparar magnitudes entre pocas categorías** (en este caso, solo dos sistemas).  
@@ -84,13 +84,6 @@ Visualizar la distribución del **porcentaje de egresos por COVID-19** entre los
 ## Interpretación general
 El análisis gráfico permite observar cómo el **sistema público (FONASA)** concentró la mayor parte de los egresos hospitalarios por COVID-19 durante los años críticos de la pandemia, evidenciando su rol principal en la atención sanitaria nacional.  
 El **sistema privado (ISAPRE)** presentó una proporción menor y más estable, posiblemente vinculada a diferencias en cobertura poblacional y tipo de prestaciones.
-
----
-
-## Limitaciones
-- Los egresos dependen de la **clasificación CIE-10 (U07.1/U07.2)** y pueden variar según la fuente.  
-- Los datos no incluyen detalles clínicos (edad, comorbilidades, gravedad del caso).  
-- No se controlan posibles **reclasificaciones o subregistros** de egresos en algunos establecimientos.
 
 ---
 
