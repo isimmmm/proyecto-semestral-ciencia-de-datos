@@ -14,7 +14,7 @@ En esta carpeta se encuentran tres subcarpetas que se han utilizado para leer di
 
 ## Nivel socioeconomico y geografico
 
-`Contenido`: 
+`Contenido:` 
 - Notebook .ipynb de procesamiento y filtrado de los datos.
 - Archivos .csv producto de la limpieza.
 
