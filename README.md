@@ -4,12 +4,14 @@ Este proyecto investiga cómo el nivel socioeconómico de las comunas se relacio
 
 ## Estructura
 
+```bash
 proyecto/
 ├── data/                   # Archivos de datos (procesados)
 ├── notebooks/              # Notebooks con análisis exploratorio y modelamiento
 ├── figures/                # Imágenes y visualizaciones generadas
 ├── web/                    # Archivos para GitHub Pages
-├── README.md               # Descripción general del proyecto
+└── README.md               # Descripción general del proyecto
+```
 
 ## Bases de datos (fuentes)
 
