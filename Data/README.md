@@ -5,6 +5,7 @@ En esta carpeta se encuentran tres subcarpetas que se han utilizado para leer di
 * — Covid-19 
 * — Nivel socioeconomico y geografico
 * — prestadores de salud
+* — censo
 
 ## Covid-19
 
@@ -24,3 +25,8 @@ En esta carpeta se encuentran tres subcarpetas que se han utilizado para leer di
 - Notebook .ipynb con el proceso de limpieza y tranformación de la base de datos, además de análisis y visualización de los datos.
 - Base de datos .xlsx y .csv con la que se trabajó.
 - Archivo .csv con dataframe resultante de la limpieza. 
+
+## censo
+`Contenido:`
+- Notebook .ipynb con la lectura y manipulación de datos para hacer la estimación poblacional.
+- Archivo .csv con dataframe resultante de las estimaciones.
