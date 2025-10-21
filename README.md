@@ -36,6 +36,10 @@ Este proyecto se encuentra todavía en desarrollo. Los próximos pasos serán:
 - Desarrollar la publicación del proyecto en GitHub Pages.
 - Creación de las carpetas figures y web con su contenido correspondiente.
 
+## Recreación del proyecto
+
+Cada carpeta contiene los pasos a seguir para recrear este proyecto por cuenta propia.
+
 ## Equipo de trabajo
 
 - Daniela Cerda.
