@@ -6,6 +6,7 @@ En esta carpeta se encuentran tres subcarpetas que se han utilizado para leer di
 * — Nivel socioeconomico y geografico
 * — prestadores de salud
 * — censo
+* — Extra_Data
 
 ## Covid-19
 
@@ -30,3 +31,7 @@ En esta carpeta se encuentran tres subcarpetas que se han utilizado para leer di
 `Contenido:`
 - Notebook .ipynb con la lectura y manipulación de datos para hacer la estimación poblacional.
 - Archivo .csv con dataframe resultante de las estimaciones.
+
+## Extra_Data
+`Contenido:`
+- Archivo GEOJSON con las comunas de Chile para poder graficarlas en notebooks/.
