@@ -15,11 +15,14 @@ proyecto/
 
 ## Bases de datos (fuentes)
 
-- COVID-19 de OBSERVA, Gobierno de Chile.
-- Encuesta Nacional de Caracterización Socioeconómica CASEN.
-- CENSO 2017 y 2024, del Instituto Nacional de Estadísticas Chile (INE).
-- Superintendencia de Salud: Egresos hospitalarios del sistema ISAPRE, por diagnóstico y tipo de prestador.
-- Departamento de Estadísticas e Información de Salud (DEIS): Egresos hospitalarios del sistema público (FONASA).
+- [COVID-19 de OBSERVA, Gobierno de Chile](https://observa.minciencia.gob.cl/datos-abiertos/datos-del-repositorio-covid-19).
+- [Encuesta Nacional de Caracterización Socioeconómica CASEN 2017](https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2017).
+- [CENSO 2017, del Instituto Nacional de Estadísticas Chile (INE)](https://censo2024.ine.gob.cl/estadisticas-2017/).
+- [CENSO 2024, del Instituto Nacional de Estadísticas Chile (INE)](https://censo2024.ine.gob.cl/estadisticas/).
+- [Encuesta Nacional de Caracterización Socioeconómica CASEN 2020](https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-en-pandemia-2020).
+- [Encuesta Nacional de Caracterización Socioeconómica CASEN 2022](https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2022).
+- [Superintendencia de Salud: Egresos hospitalarios del sistema ISAPRE, por diagnóstico y tipo de prestador](https://www.superdesalud.gob.cl/biblioteca-digital/estadistica-anual-de-egresos-hospitalarios-del-sistema-isapre-ano-2023/).
+- [Departamento de Estadísticas e Información de Salud (DEIS): Egresos hospitalarios del sistema público (FONASA)](https://deis.minsal.cl/#datosabiertos).
 
 ## Herramientas utilizadas y necesarias
 
