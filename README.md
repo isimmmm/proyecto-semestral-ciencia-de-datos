@@ -46,11 +46,11 @@ Cada carpeta contiene los pasos a seguir para recrear este proyecto por cuenta p
 ## Equipo de trabajo y roles
 
 `Daniela Cerda:`
-- Responsable de la lectura y limpieza de las bases de datos _Egresos hospitalarios del sistema ISAPRE, por diagnóstico y tipo de prestador_ y _Departamento de Estadísticas e Información de Salud (DEIS),_ trabajo visible en [Data/prestadores de salud].
-- EDA y análisis de las bases de datos mencionadas con anterioridad en el notebook: [notebooks/Análisis (notebooks)/Analisis-prestadores-de-salud.ipynb].
+- Responsable de la lectura y limpieza de las bases de datos _Egresos hospitalarios del sistema ISAPRE, por diagnóstico y tipo de prestador_ y _Departamento de Estadísticas e Información de Salud (DEIS),_ trabajo visible en [Prestadores de salud](Data/prestadores de salud).
+- EDA y análisis de las bases de datos mencionadas con anterioridad en el notebook: [Analisis-prestadores-de-salud](notebooks/Análisis (notebooks)/Analisis-prestadores-de-salud.ipynb).
 - Participación activa en la discusión metodológica y en el análisis del equipo respecto a la pregunta a responder.
-- Colaboración en el notebook grupal de exploración de datos en conjunto [notebooks/Análisis (notebooks)/Notebook_exploratorio_conjunto.ipynb], aportando gráficos y análisis.
-- Aporte directo al Notebook_principal.ipynb. donde se encuentra el análisis y la respuesta principal del proyecto [notebooks/Notebook_principal.ipynb].
+- Colaboración en el notebook grupal de exploración de datos en conjunto [Notebook_exploratorio_conjunto](notebooks/Análisis (notebooks)/Notebook_exploratorio_conjunto.ipynb), aportando gráficos y análisis.
+- Aporte directo al Notebook_principal.ipynb. donde se encuentra el análisis y la respuesta principal del proyecto [Notebook_prinipal](notebooks/Notebook_principal.ipynb).
   
 `Liz González:`
 - Responsable de la lectura y limpieza de las bases de datos _Encuesta Nacional de Caracterización Socioeconómica Casen 2017, 2020 y 2022,_ trabajo visible en [Data/Nivel socioeconomico y geografico].
