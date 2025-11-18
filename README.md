@@ -57,7 +57,7 @@ Cada carpeta contiene los pasos a seguir para recrear este proyecto por cuenta p
 - EDA y análisis de las bases de datos mencionadas con anterioridad en el notebook: [notebooks/Análisis (notebooks)/Analisis_de_datos_Socioeconomicos y Geograficos.ipynb].
 - Participación activa en la discusión metodológica y en el análisis del equipo respecto a la pregunta a responder.
 - Colaboración en el notebook grupal de exploración de datos en conjunto [notebooks/Análisis (notebooks)/Notebook_exploratorio_conjunto.ipynb], aportando gráficos y análisis.
-- Aporte directo al Notebook_principal.ipynb. donde se encuentra el análisis y la respuesta principal del proyecto [notebooks/Notebook_principal.ipynb].
+- Aporte directo al Notebook_principal.ipynb. donde se encuentra el análisis y la respuesta principal del proyecto [Notebook_principal](notebooks/Notebook_principal.ipynb).
   
 `Isidora Mora:`
 - Responsable de la lectura y limpieza de las bases de datos _Datos del Repositorio COVID-19,_ trabajo visible en [Data/Covid-19].
