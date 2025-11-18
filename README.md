@@ -43,9 +43,29 @@ Este proyecto se encuentra todavía en desarrollo. Los próximos pasos serán:
 
 Cada carpeta contiene los pasos a seguir para recrear este proyecto por cuenta propia.
 
-## Equipo de trabajo
+## Equipo de trabajo y roles
 
-- Daniela Cerda.
-- Liz González.
-- Isidora Mora.
-- Benjamín Ubilla.
+`Daniela Cerda:`
+- Responsable de la lectura y limpieza de las bases de datos _Egresos hospitalarios del sistema ISAPRE, por diagnóstico y tipo de prestador_ y _Departamento de Estadísticas e Información de Salud (DEIS),_ trabajo visible en [Data/prestadores de salud].
+- EDA y análisis de las bases de datos mencionadas con anterioridad en el notebook: [notebooks/Análisis (notebooks)/Analisis-prestadores-de-salud.ipynb].
+- Participación activa en la discusión metodológica y en el análisis del equipo respecto a la pregunta a responder.
+- Colaboración en el notebook grupal de exploración de datos en conjunto [notebooks/Análisis (notebooks)/Notebook_exploratorio_conjunto.ipynb], aportando gráficos y análisis.
+- Aporte directo al Notebook_principal.ipynb. donde se encuentra el análisis y la respuesta principal del proyecto [notebooks/Notebook_principal.ipynb].
+  
+`Liz González:`
+- Responsable de la lectura y limpieza de las bases de datos _Encuesta Nacional de Caracterización Socioeconómica Casen 2017, 2020 y 2022,_ trabajo visible en [Data/Nivel socioeconomico y geografico].
+- EDA y análisis de las bases de datos mencionadas con anterioridad en el notebook: [notebooks/Análisis (notebooks)/Analisis_de_datos_Socioeconomicos y Geograficos.ipynb].
+- Participación activa en la discusión metodológica y en el análisis del equipo respecto a la pregunta a responder.
+- Colaboración en el notebook grupal de exploración de datos en conjunto [notebooks/Análisis (notebooks)/Notebook_exploratorio_conjunto.ipynb], aportando gráficos y análisis.
+- Aporte directo al Notebook_principal.ipynb. donde se encuentra el análisis y la respuesta principal del proyecto [notebooks/Notebook_principal.ipynb].
+  
+`Isidora Mora:`
+- Responsable de la lectura y limpieza de las bases de datos _Datos del Repositorio COVID-19,_ trabajo visible en [Data/Covid-19].
+- Responsable de la lectura de las bases de datos _Censo 2017 y 2024_, creando una estimación de la población en los años intermedios, trabajo visible en [Data/censo].
+- EDA y análisis de las bases de datos mencionadas con anterioridad en el notebook: [notebooks/Análisis (notebooks)/Analisis-de-datos-Covid-19.ipynb].
+- Participación activa en la discusión metodológica y en el análisis del equipo respecto a la pregunta a responder.
+- Colaboración en el notebook grupal de exploración de datos en conjunto [notebooks/Análisis (notebooks)/Notebook_exploratorio_conjunto.ipynb], aportando gráficos y análisis.
+- Aporte directo al Notebook_principal.ipynb. donde se encuentra el análisis y la respuesta principal del proyecto [notebooks/Notebook_principal.ipynb]
+
+`Benjamín Ubilla:`
+- No realiza aportes al proyecto grupal.
