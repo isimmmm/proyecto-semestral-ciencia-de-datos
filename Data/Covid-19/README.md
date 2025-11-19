@@ -34,3 +34,5 @@ Los archivos .csv que se crean, a partir del notebook "limpieza.ipynb", son los 
 - *transacciones_bip_por_comuna* - Por comuna perteneciente a la Región Metropolitana, de forma individual, en el 2020, se muestran las transacciones hechas por la tarjeta BIP de movilidad de transporte público. 
 
 - *covid-19_datos_por_comuna* - Dataframe que contiene todos los datos recolectados anteriormente, haciéndoles .merge() por año y comuna. Datos faltantes de los archivos .csv leídos con anterioridad, son rellenados con NaN.
+
+- *datos_finales* - Dataframe que contiene los datos del archivo *covid-19_datos_por_comuna.csv*, pero agregando las columnas de las variables poblaciones en porcentaje por sobre el total de la población, además de la población aproximada por cada año de las comunas según las predicciones hechas en la carpeta [censo/].
