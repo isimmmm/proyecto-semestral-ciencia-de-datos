@@ -27,8 +27,10 @@ proyecto/
 ## Herramientas utilizadas y necesarias
 
 - Lenguaje de programación: Python.
-- Matplotlib / Seaborn para la visualización de datos.
 - JupyterNotebooks para la exploración y limpieza de datos.
+- Matplotlib / Seaborn para la visualización de datos.
+- Statsmodels (sm) para el modelo estadístico.
+- Numpy, pandas, geopandas para la lectura de datos y apoyo para tranformar datos al graficarlos.
 
 ## A futuro...
 
