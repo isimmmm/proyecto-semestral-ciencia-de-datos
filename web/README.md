@@ -1,3 +1,0 @@
-A futuro...
-
-terminar la creación de GithubPages.
