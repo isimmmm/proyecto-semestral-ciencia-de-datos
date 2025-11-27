@@ -167,7 +167,6 @@
             padding: 1rem;
             border-left: 4px solid var(--secondary);
             margin: 1rem 0;
-            font-style: italic;
         }
         
         .highlight-box {
@@ -250,6 +249,14 @@
             margin-bottom: 1rem;
         }
         
+        .key-finding {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        
         @media (max-width: 768px) {
             .nav-tabs {
                 flex-direction: column;
@@ -310,7 +317,9 @@
                         <div class="data-source">
                             <strong>Fuente:</strong> Elaboración propia basada en datos CASEN 2017-2022 y CENSO 2017-2024
                         </div>
-                        <p>El mapa evidencia la desigual distribución territorial del nivel socioeconómico en la Región Metropolitana. Se observa una clara segregación espacial donde las comunas del oriente presentan predominantemente niveles socioeconómicos altos, mientras que las comunas del sur y norponiente presentan niveles más bajos.</p>
+                        <div class="analysis-text">
+                            <p>El mapa evidencia la desigual distribución territorial del nivel socioeconómico en la Región Metropolitana. Se observa una clara segregación espacial donde las comunas del oriente presentan predominantemente niveles socioeconómicos altos, mientras que las comunas del sur y norponiente presentan niveles más bajos.</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -391,21 +400,31 @@
         <div id="findings" class="tab-content">
             <h2>Hallazgos principales</h2>
             <div class="card">
-                <p>El análisis realizado manifiesta que la desigualdad socioeconómica en la Región Metropolitana de Chile tiene un impacto directo y profundo en la distribución del impacto sanitario del COVID-19, especialmente en términos de vacunación, mortalidad y testeo.</p>
+                <p>El análisis revela patrones consistentes sobre cómo la desigualdad socioeconómica se tradujo en impactos diferenciados durante la pandemia.</p>
                 
-                <h3>Principales conclusiones de los gráficos</h3>
-                <ul class="conclusion-list">
-                    <li><strong>Desigualdad territorial evidente:</strong> Las comunas más vulnerables (bajo NSE) experimentaron mayor impacto de la pandemia, reflejando desigualdades estructurales del sistema de salud y acceso limitado a servicios médicos.</li>
-                    <li><strong>Ventaja socioeconómica:</strong> Las comunas más ricas (alto NSE) mostraron menores tasas de mortalidad, mayor acceso a vacunas, mejores recursos sanitarios y mayor capacidad de testeo.</li>
-                    <li><strong>Relación vacunación-mortalidad débil:</strong> La mortalidad no puede explicarse únicamente por la vacunación. Otros factores como edad de la población, testeo y calidad del sistema de salud son cruciales.</li>
-                    <li><strong>Testeo como mediador clave:</strong> Las comunas con mayores tasas de testeo logran detectar más casos y mantienen menor mortalidad proporcional, subrayando la importancia del diagnóstico temprano.</li>
-                    <li><strong>Equidad en cobertura de sospechosos:</strong> La cobertura de casos sospechosos fue excepcional en todas las comunas (>90%), mostrando equidad en este aspecto específico del sistema de salud.</li>
-                </ul>
+                <div class="key-finding">
+                    <h4>🔍 Desigualdad territorial transversal</h4>
+                    <p>La desigualdad territorial es un eje importante del análisis y la podemos observar transversalmente en la vacunación (mayor en zonas ricas - NSE Alto) y el testeo, mientras que en las zonas pobres predomina la mortalidad.</p>
+                </div>
                 
-                <div class="highlight-box">
-                    <h3>Interpretación integral</h3>
-                    <p>Aunque la relación entre vacunación y mortalidad se muestra débil, los gráficos indican que la mortalidad no puede explicarse únicamente por la vacunación. Otros factores, como la edad de la población, el testeo y la calidad del sistema de salud, juegan un papel crucial en determinar los resultados sanitarios.</p>
-                    <p>En particular, notamos que a pesar de que la cobertura de casos sospechosos fue excepcional en todas las comunas, aún así el testeo se revela como un mediador clave, ya que las comunas con mayores tasas de testeo logran detectar más casos y, por lo tanto, mantienen una menor mortalidad proporcional. Esto subraya la importancia de diagnosticar a tiempo y prevenir el subdiagnóstico, lo que indirectamente ayuda a salvar vidas al permitir intervenciones más rápidas.</p>
+                <div class="key-finding">
+                    <h4>💉 Vacunación y mortalidad: relación compleja</h4>
+                    <p>Con base en algunos gráficos relacionados, como la débil correlación del heatmap y los gráficos de dispersión, podemos inferir que la mortalidad comunal no se explica por vacunación por sí sola, sino con otros factores adicionales como edad, testeo, acceso a salud, etc. Es interesante notar la cantidad de vacunados en porcentaje a la población, donde nuevamente las comunas ricas llevan la delantera de forma notable.</p>
+                </div>
+                
+                <div class="key-finding">
+                    <h4>🧪 Testeo como mediador clave</h4>
+                    <p>Los gráficos que analizamos muestran que más testeo significa más casos detectados y por lo tanto menor mortalidad proporcional. Mientras que cuando hay menos testeo, mayor subdiagnóstico y por ende mayor mortalidad. En base a lo anterior se podría concluir que testear más, al permitir diagnóstico temprano, indirectamente salva más vidas.</p>
+                </div>
+                
+                <div class="key-finding">
+                    <h4>📊 NSE e ingresos correlacionados con mortalidad</h4>
+                    <p>Podemos confirmar con varios gráficos que la mortalidad es más alta en comunas vulnerables y más baja en comunas ricas. Sumado a eso existe una mayor positividad en comunas pobres. Si bien no tenemos las variables indicadas para hacer un juicio totalmente correcto, sería interesante testear si esto se debe a la menor calidad y cantidad de los recursos sanitarios.</p>
+                </div>
+                
+                <div class="key-finding">
+                    <h4>📈 Cobertura de casos sospechosos: logro equitativo</h4>
+                    <p>Es notable la gran cantidad de casos sospechosos cubiertos en todas las comunas, que no bajan en promedio del 88%, siendo este un factor bastante interesante al considerar que, a pesar de esto, hubieron comunas que aún así tuvieron mayor índice de mortalidad (que en su mayoría se conectaba a bajos recursos), y un mal porcentaje de cobertura en la vacunación.</p>
                 </div>
             </div>
         </div>
@@ -417,24 +436,24 @@
                     <h3>¿Cuál es la relación entre el nivel socioeconómico comunal y el impacto del COVID-19 en la Región Metropolitana de Chile?</h3>
                 </div>
                 
-                <p>La relación entre el nivel socioeconómico comunal y el impacto del COVID-19 en la Región Metropolitana de Chile es clara: <strong>las comunas con menor NSE y menores ingresos han sufrido un mayor impacto sanitario, con más muertes y menor acceso a recursos sanitarios.</strong> Esto se debe a múltiples factores, como el bajo testeo, el acceso limitado a atención médica y las condiciones sociales que agravan el riesgo de contagio.</p>
+                <div class="highlight-box">
+                    <h3>Respuesta directa</h3>
+                    <p>La relación entre el nivel socioeconómico comunal y el impacto del COVID-19 en la Región Metropolitana de Chile es clara: <strong>las comunas con menor NSE y menores ingresos han sufrido un mayor impacto sanitario, con más muertes y menor acceso a recursos sanitarios.</strong></p>
+                </div>
                 
-                <h3>Factores explicativos identificados</h3>
-                <ul class="conclusion-list">
-                    <li><strong>Bajo testeo:</strong> Las comunas vulnerables tuvieron menor capacidad de diagnóstico temprano, lo que impidió intervenciones oportunas.</li>
-                    <li><strong>Acceso limitado a atención médica:</strong> Barreras estructurales en el acceso a servicios de salud de calidad y oportunos.</li>
-                    <li><strong>Condiciones sociales agravantes:</strong> Hacinamiento, trabajos presenciales esenciales y uso masivo de transporte público aumentaron el riesgo de contagio.</li>
-                    <li><strong>Menor acceso a vacunas:</strong> Aunque las diferencias no fueron extremas, las comunas de nivel medio y bajo-medio mostraron menor cobertura vacunal.</li>
-                    <li><strong>Determinantes sociales de salud:</strong> Las condiciones de vida previas a la pandemia crearon vulnerabilidades diferenciales.</li>
-                </ul>
-                
-                <h3>Contraste entre comunas</h3>
-                <p>Por el contrario, <strong>las comunas con mayor NSE y mayores ingresos han tenido un menor impacto</strong>, gracias a un mayor acceso a vacunas, mejor calidad del sistema de salud y mayores recursos para prevenir y tratar la enfermedad, y condiciones de vida que facilitaron el distanciamiento social y el teletrabajo.</p>
+                <div class="analysis-text">
+                    <h4>Conclusión integral</h4>
+                    <p>El análisis realizado manifiesta que la desigualdad socioeconómica en la Región Metropolitana de Chile tiene un impacto directo y profundo en la distribución del impacto sanitario del COVID-19, especialmente en términos de vacunación, mortalidad y testeo. Las comunas más vulnerables, caracterizadas por un bajo nivel socioeconómico (NSE) y menores ingresos, han experimentado un mayor impacto de la pandemia, reflejando las desigualdades estructurales del sistema de salud y el acceso limitado a servicios de atención médica. En contraste, las comunas más ricas, con un NSE alto, han mostrado menores tasas de mortalidad, mayor acceso a las vacunas, mejores recursos sanitarios y mayor testeo, lo que ha permitido detectar y tratar los casos de manera más eficiente.</p>
+                    
+                    <p>Aunque la relación entre vacunación y mortalidad se muestra débil, los gráficos indican que la mortalidad no puede explicarse únicamente por la vacunación. Otros factores, como la edad de la población, el testeo y la calidad del sistema de salud, juegan un papel crucial en determinar los resultados sanitarios. En particular, notamos que a pesar de que la cobertura de casos sospechosos fue excepcional en todas las comunas, aún así el testeo se revela como un mediador clave, ya que las comunas con mayores tasas de testeo logran detectar más casos y, por lo tanto, mantienen una menor mortalidad proporcional. Esto subraya la importancia de diagnosticar a tiempo y prevenir el subdiagnóstico, lo que indirectamente ayuda a salvar vidas al permitir intervenciones más rápidas.</p>
+                    
+                    <p>Por otro lado, los análisis sobre el impacto de los sistemas de salud privados (isapre) y públicos (fonasa) no han proporcionado conclusiones definitivas debido a la baja representatividad de las muestras en las comunas donde predomina isapre. Esto deja abierta la pregunta sobre la efectividad comparativa entre estos sistemas en la lucha contra la pandemia, aunque los resultados actuales no permiten inferir causalidad.</p>
+                </div>
                 
                 <div class="highlight-box">
                     <h3>Conclusión final</h3>
-                    <p><strong>La desigualdad socioeconómica juega un rol crucial en el impacto del COVID-19</strong>, afectando la mortalidad y la capacidad de respuesta sanitaria en las comunas más vulnerables. La pandemia no ha sido un fenómeno meramente biológico, sino que ha actuado como un <strong>amplificador de desigualdades preexistentes</strong>, revelando las profundas brechas en nuestro sistema de salud y protección social.</p>
-                    <p>En resumen, el estudio confirma que las diferencias socioeconómicas entre comunas tienen un efecto directo en la mortalidad por COVID-19. Las comunas más vulnerables sufren peores resultados sanitarios debido a una combinación de factores como el bajo testeo, el acceso limitado a servicios médicos y la alta vulnerabilidad social. Si bien la vacunación es un factor importante en la reducción de la mortalidad, su impacto está condicionado por la presencia de otros determinantes sociales de la salud. Este análisis subraya la necesidad de una intervención más equitativa en la distribución de recursos sanitarios, con un enfoque especial en las comunas de mayor pobreza, para reducir las desigualdades en salud y mitigar el impacto de futuras crisis sanitarias.</p>
+                    <p>En resumen, el estudio confirma que las diferencias socioeconómicas entre comunas tienen un efecto directo en la mortalidad por COVID-19. Las comunas más vulnerables sufren peores resultados sanitarios debido a una combinación de factores como el bajo testeo, el acceso limitado a servicios médicos y la alta vulnerabilidad social. Si bien la vacunación es un factor importante en la reducción de la mortalidad, su impacto está condicionado por la presencia de otros determinantes sociales de la salud.</p>
+                    <p><strong>Este análisis subraya la necesidad de una intervención más equitativa en la distribución de recursos sanitarios, con un enfoque especial en las comunas de mayor pobreza, para reducir las desigualdades en salud y mitigar el impacto de futuras crisis sanitarias.</strong></p>
                 </div>
             </div>
         </div>
@@ -444,21 +463,28 @@
             <div class="card">
                 <p>Aunque el análisis realizado proporciona una visión valiosa sobre la relación entre el nivel socioeconómico y el impacto del COVID-19, existen limitaciones y sesgos que deben considerarse al interpretar los resultados.</p>
                 
-                <h3>Principales limitaciones</h3>
+                <div class="analysis-text">
+                    <h4>Variables no consideradas y futuras investigaciones</h4>
+                    <p>Los hallazgos nos dejan con la incógnita de los factores que realmente llevan a las diferencias observadas en mortalidad, que, al no ser explicadas completamente por la cobertura de casos sospechosos, hacen relucir otras variables que no se han considerado. Creemos que vale la pena investigar en el futuro:</p>
+                    <ul class="conclusion-list">
+                        <li>Personas atendidas en centros públicos vs privados</li>
+                        <li>Calidad de recursos sanitarios de las comunas</li>
+                        <li>Variable del transporte público vs privado</li>
+                        <li>Estilo de trabajo de las personas (presencial vs remoto)</li>
+                        <li>Densidad poblacional y condiciones de vivienda</li>
+                        <li>Acceso a información y educación en salud</li>
+                    </ul>
+                </div>
                 
                 <div class="analysis-text">
-                    <h4>Subdiagnóstico y falta de datos completos</h4>
-                    <p>Un problema clave es el subdiagnóstico de los casos de COVID-19. En las comunas con menos recursos, el acceso a pruebas y la capacidad de diagnóstico son limitados, lo que significa que el número real de casos podría ser mucho mayor de lo reportado. Este sesgo puede llevar a subestimar la mortalidad o la distribución de los casos en ciertas áreas, distorsionando la interpretación de la relación entre vacunación y mortalidad. Al basarse en datos incompletos o no representativos, las conclusiones pueden ser erróneas, afectando la toma de decisiones políticas o de salud pública.</p>
+                    <h4>Limitaciones metodológicas</h4>
+                    <p>Un problema clave es el subdiagnóstico de los casos de COVID-19. En las comunas con menos recursos, el acceso a pruebas y la capacidad de diagnóstico son limitados, lo que significa que el número real de casos podría ser mayor de lo reportado. Este sesgo puede llevar a subestimar la mortalidad o la distribución de los casos en ciertas áreas, distorsionando la interpretación de la relación entre variables.</p>
                     
-                    <h4>Falta de variables</h4>
-                    <p>Aunque se identificaron factores importantes como la vacunación y el nivel socioeconómico, muchas otras variables confusoras podrían haber influido en los resultados. Factores como la edad de la población, las enfermedades preexistentes, el acceso a atención médica, no fueron evaluados. Estos factores podrían estar influyendo de manera significativa en la mortalidad por COVID-19 y no fueron controlados en el análisis. Como se menciona en el libro Weapons of Math Destruction, la falta de variables adecuadas y la simplificación de modelos pueden exacerbar las desigualdades, especialmente cuando se hacen recomendaciones basadas en modelos o datos incompletos.</p>
-                    
-                    <h4>Riesgo de la automatización y los modelos predictivos</h4>
-                    <p>Actualmente la inteligencia artificial y los modelos predictivos se usan cada vez más en la toma de decisiones, es importante recordar que el uso de algoritmos sin transparencia o sin una supervisión adecuada puede perpetuar sesgos y agravar las desigualdades. Si las recomendaciones para asignar recursos (como vacunas, pruebas o tratamiento) se basan en modelos matemáticos sin tener en cuenta los contextos locales o las desigualdades previas, estos modelos pueden reproducir las mismas injusticias que se buscan corregir, al centrarse en la eficiencia sin considerar las implicaciones sociales y éticas.</p>
+                    <p>Aunque se identificaron factores importantes como la vacunación y el nivel socioeconómico, muchas otras variables confusoras podrían haber influido en los resultados. Factores como la edad de la población, las enfermedades preexistentes, y el acceso a atención médica especializada no fueron completamente evaluados.</p>
                 </div>
                 
                 <div class="highlight-box">
-                    <p><strong>Consideración final:</strong> Aunque este análisis proporciona información valiosa sobre el impacto del COVID-19 y la relación con el nivel socioeconómico, las limitaciones de los datos y los sesgos inherentes en los modelos utilizados deben ser cuidadosamente considerados antes de implementar políticas basadas en estos resultados. Es fundamental que cualquier solución propuesta tenga en cuenta la distribución equitativa de recursos, la prevención de futuros sesgos y una visión inclusiva y justa que no profundice las desigualdades existentes. El uso de modelos predictivos y decisiones basadas en datos debe ir acompañado de una supervisión ética y de una evaluación crítica de las posibles consecuencias no deseadas que podrían surgir, y siempre comprendiendo que los problemas sociales son multi-factoriales, no pueden ser simplificados, y merecen un estudio cuidadoso y profundo de causales y planeación.</p>
+                    <p><strong>Consideración final:</strong> Los problemas sociales son multi-factoriales y no pueden ser simplificados. Merecen un estudio cuidadoso y profundo de causales y planeación que considere la complejidad de los fenómenos sociales y de salud.</p>
                 </div>
             </div>
         </div>
