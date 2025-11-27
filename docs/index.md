@@ -84,7 +84,7 @@ La mortalidad muestra una diferencia ligera pero consistente según el grupo soc
 
 A continuación, veamos la correlación entre la tasa de mortalidad porcentual, el índice de pobreza y el ingreso promedio.
 
-![Tasa vs Índice](figures/tasa_mortalidad_vs_indice_pobreza.png)
+![Tasa vs Índice](figures/corr_tasa_mortalidad_vs_variables_socio.png)
 
 Entonces, la tasa de mortalidad por COVID-19 muestra una correlación positiva con el índice de pobreza, lo cual nos indica que a mayor pobreza, mayor tasa de mortalidad. Por otro lado, la relación con el ingreso promedio muestra una correlación negativa, indicando que las comunas con ingresos más altos tienden a tener menores tasas de mortalidad. Estas correlaciones sugieren que las comunas con mayores niveles de pobreza tienden a tener mayor mortalidad, lo que refleja la vulnerabilidad de los sectores más pobres frente a la pandemia. Además, comunas con ingresos más altos parecen tener menos mortalidad, posiblemente debido a mejores condiciones de salud y acceso a servicios médicos.
 
