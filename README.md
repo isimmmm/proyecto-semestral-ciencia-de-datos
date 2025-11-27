@@ -32,15 +32,13 @@ proyecto/
 - Statsmodels (sm) para el modelo estadístico.
 - Numpy, pandas, geopandas para la lectura de datos y apoyo para tranformar datos al graficarlos.
 
-## A futuro...
-
-Este proyecto se encuentra todavía en desarrollo. Los próximos pasos serán:
-
-- Desarrollar la publicación del proyecto en GitHub Pages.
-
 ## Recreación del proyecto
 
 Cada carpeta contiene los pasos a seguir para recrear este proyecto por cuenta propia.
+
+## Declaración de uso de IA
+
+Se utilizaron herramientas de Inteligencia Artificial Generativa (Deepseek/ChatGPT) para generar el código .html a partir de un documento .md, y como pequeño apoyo para el código de regresión lineal en notebooks/Notebook_principal.
 
 ## Equipo de trabajo y roles
 
