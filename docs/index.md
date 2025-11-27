@@ -1,8 +1,7 @@
 # Proyecto de Ciencia de Datos  
 ## ¿Cuál es la relación entre el nivel socioeconómico comunal y el impacto del COVID-19 en la Región Metropolitana?
 
-Bienvenido a la página web del proyecto. Este sitio resume los principales hallazgos del análisis realizado sobre la relación entre el nivel socioeconómico comunal y el impacto del COVID-19 en la Región Metropolitana de Chile.  
-Aquí encontrará información relevante del estudio, incluyendo nuestra motivación, visualizaciones, factores clave, hallazgos y más.
+Bienvenido a la página web del proyecto. Este sitio resume los principales hallazgos del análisis realizado sobre la relación entre el nivel socioeconómico comunal y el impacto del COVID-19 en la Región Metropolitana de Chile. Aquí encontrará información relevante del estudio, incluyendo nuestra motivación, visualizaciones, factores clave, hallazgos y más.
 
 ---
 
@@ -55,10 +54,11 @@ El análisis combinó estadísticas descriptivas con interpretación contextual 
 
 ### 4. Interpretación y conclusiones:
 A partir de la exploración visual y analítica se identificaron patrones consistentes:
-- mayor vacunación y testeo en comunas ricas
-- mayor mortalidad proporcional en comunas vulnerables
-- relación inversa entre ingresos y mortalidad,
-- relación directa entre pobreza y mortalidad.
+- La desigualdad económica tiene un efecto directo en la mortalidad por COVID-19.
+- Existe una correlación clara entre el nivel socioeconómico (NSE) de una comuna y el impacto del COVID-19. 
+- Las comunas más vulnerables sufrieron un mayor impacto sanitario (más mortalidad), mientras que las más ricas tuvieron mejores resultados.
+- Las comunas de bajo NSE tuvieron un acceso limitado a servicios médicos, menores recursos sanitarios y una menor capacidad de testeo, lo que agravó su situación.
+- Relación inversa entre ingresos y mortalidad,
 Estos hallazgos se integraron para responder la pregunta central del proyecto.
 
 ---
@@ -66,50 +66,56 @@ Estos hallazgos se integraron para responder la pregunta central del proyecto.
 ## Visualizaciones principales del análisis
 
 
-### Fallecidos de Covid-19 por comuna
-![Fallecidos por comuna](../figures/fallecidos_por_comuna_covid-19.png)
-
-Las 5 comunas más afectadas a nivel de mortalidad por el covid-19 han sido San Ramón, Cerro Navia, Pedro Aguirre Cerda, Independencia y Lo Espejo. Las 5 menos afectadas han sido San Pedro, Lo Barnechea, Colina, Santiago y Lampa.
-
----
-
-### Porcentaje de vacunación por comuna  
-![Vacunación](../figures/vacunados_por_comuna_porcentaje.png)
-
-Las comunas ricas presentan mayor vacunación y las más pobres, menor cobertura.
-
----
-
 ### Mapa de NSE Predominante en la RM  
-![Mapa NSE](../figures/mapa_nse_rm.png)
+![Mapa NSE](figures/mapa_nse_rm.png)
 
 El mapa evidencia la desigual distribución territorial del nivel socioeconómico.
 
----
+### Mortalidad promedio por COVID según grupo socioecoómico
 
-### Correlación de positividad vs mortalidad  
-![Positividad](../figures/corr_positividad_vs_mortalidad_covid_19.png)
+El NSE es el Nivel Socioecnómico del hogar, que se clasifica en "Bajo", "Bajo-Medio", "Medio", "Medio-alto", "Alto", siendo Alto los hogares más privilegiados socioeconomicamente hablando. Para este gráfico, hemos sacado el porcentaje de NSE de cada comuna (por promedios en ganancia) y lo hemos comparado a la mortalidad en porcentaje de población por todas las comunas de la Región Metropolitana.
 
-Podemos notar que mientras más PCR positivos, menos mortalidad (–0.51). Además mientras más % casos confirmados, nuevamente menos mortalidad (–0.61).
-Esto puede ocurrir porque comunas de mayor NSE testean mucho más, detectan más casos leves, y tienen menos mortalidad. Por lo mismo la positividad baja puede significar mucho testeo, no pocos contagios.
-Este gráfico es clave para entender que la mortalidad se asocia un poco más a diagnóstico que a contagios.
+![Mortalidad promedio por NSE](figures/mortalidad_prom_grupo_socioeconomicoNSE.png)
 
----
+La mortalidad muestra una diferencia ligera pero consistente según el grupo socioeconómico al que pertenece, siendo Alto el menos afectado.
 
-### Correlación entre mortalidad y variables económicas
-![Mortalidad vs economía](../figures/corr_tasa_mortalidad_vs_variables_socio.png)
 
-Ingreso y mortalidad están inversamente correlacionados (a menor ingreso, mayor mortalidad). Además, mortalidad e índice de pobreza tienen una correlación positiva, es decir, a mayor pobreza, mayor mortalidad.
+### Tasa de mortalidad vs Índice de pobreza
 
----
+A continuación, veamos la correlación entre la tasa de mortalidad porcentual, el índice de pobreza y el ingreso promedio.
 
-## Principales Hallazgos
+![Tasa vs Índice](figures/tasa_mortalidad_vs_indice_pobreza.png)
+
+Entonces, la tasa de mortalidad por COVID-19 muestra una correlación positiva con el índice de pobreza, lo cual nos indica que a mayor pobreza, mayor tasa de mortalidad. Por otro lado, la relación con el ingreso promedio muestra una correlación negativa, indicando que las comunas con ingresos más altos tienden a tener menores tasas de mortalidad. Estas correlaciones sugieren que las comunas con mayores niveles de pobreza tienden a tener mayor mortalidad, lo que refleja la vulnerabilidad de los sectores más pobres frente a la pandemia. Además, comunas con ingresos más altos parecen tener menos mortalidad, posiblemente debido a mejores condiciones de salud y acceso a servicios médicos.
+
+
+
+### Distribución de vacunación por Nivel Socioeconómico
+
+![VaCUNACIÓN](figures/boxplot_distribucion_vacunacion_nse.png)
+![Vacunación vs mortalidad: perspectiva por Nivel Socioeconómico](figures/scatter_vacunacionmortalidadnse_mortalidad_vacunacion.png)
+Este último gráfico muestra el porcentaje de vacunación de la primera dosis de la vacuna contra el covid-19 vs la mortalidad por comuna, y hace una comparación a la mortalidad y el NSE (Nivel Socioeconómico de las comunas).
+
+Como podemos notar, ya con los datos del NSE por comuna, se ve una relación entre la cantidad de dosis administradas de la vacuna por porcentaje de población y su NSE, siendo las categorías de "Medio" y "Bajo-medio" aquellas con menos vacunas (teniendo la misma media). Además, podemos notar que la mortalidad se ve reducida notoriamente en comunas de altos ingresos, incluso en aquellas comunas con más bajo rango de vacunación. Luego, exceptuando una comuna, el NSE "Medio-alto" se ve más afectado que las comunas "Alto", pero sin pasar el rango de 0.175 aprox. de mortalidad, sin embargo las comunas Medio y Bajo-medio no siguen patrones consistentes en cuanto a mortalidad, siendo ruidaosas en el mapa, sobretodo la categoría "Medio". Con esto no podemos concluir que las vacunas hayan sido un causante de la baja mortalidad, sin embargo es válido plantearnos la pregunta si en realidad se distribuyen mejor los recursos a las comunas con alto NSE y es por etso la notoria subida en % de vacunación, además de presentar un patrón persistente de baja mortalidad al contrario de las otras comunas, que van de Medio-alto a Bajo-medio, donde más se nota la diferencia en Medio y Bajo-medio. Las variables que crean este fenómeno no se pueden concluir con nuestras bases de datos actuales, pero sería interesante, a futuro, investigar si esto se debió a diferencias en centros médicos, estilos de vida (como trabajos), exposición a lugares públicos como el transporte, etc.
+
+
+
+### Porcentaje de cobertura de casos sospechosos según NSE
+
+El siguiente gráfico muestra la cobertura de casos sospechosos por su nivel socioeconómico.
+![Cobertura casos sospechosos vs NSE](figures\boxplot_cobertura_sospechosos_nse.png)
+
+El porcentaje de cubrimiento de casos sospechosos es más bajo de lo normal en el sector Alto, mientras que en los otros niveles NSE se mantiene bastante estable, siendo Bajo-medio el único con un outlier bastante más abajo que los demás, y una media más baja que Medio-alto y Medio (pero más alta que Alto). Sin embargo, incluso con el outlier más bajo, se tiene un muy buen porcentaje de cobertura en todas las comunas: mayor al 80%, y un promedio aprox. del 90%. Por lo tanto, las diferencias, al ser de tan poco rango, podrían considerarse son clínicamente irrelevantes en el contexto de un sistema que logró coberturas excepcionales (>90%) de manera equitativa en todo el espectro socioeconómico. No así con las vaucnas.
+
+
+
+## Y... ¿qué nos dicen estos gráficos?
+
+Los principales hallazgos interpretando nuestros gráficos son:
 
 El análisis realizado manifiesta que la desigualdad socioeconómica en la Región Metropolitana de Chile tiene un impacto directo y profundo en la distribución del impacto sanitario del COVID-19, especialmente en términos de vacunación, mortalidad y testeo. Las comunas más vulnerables, caracterizadas por un bajo nivel socioeconómico (NSE) y menores ingresos, han experimentado un mayor impacto de la pandemia, reflejando las desigualdades estructurales del sistema de salud y el acceso limitado a servicios de atención médica. En contraste, las comunas más ricas, con un NSE alto, han mostrado menores tasas de mortalidad, mayor acceso a las vacunas, mejores recursos sanitarios y mayor testeo, lo que ha permitido detectar y tratar los casos de manera más eficiente.
 
 Aunque la relación entre vacunación y mortalidad se muestra débil, los gráficos indican que la mortalidad no puede explicarse únicamente por la vacunación. Otros factores, como la edad de la población, el testeo y la calidad del sistema de salud, juegan un papel crucial en determinar los resultados sanitarios. En particular, notamos que a pesar de que la cobertura de casos sospechosos fue excepcional en todas las comunas, aún así el testeo se revela como un mediador clave, ya que las comunas con mayores tasas de testeo logran detectar más casos y, por lo tanto, mantienen una menor mortalidad proporcional. Esto subraya la importancia de diagnosticar a tiempo y prevenir el subdiagnóstico, lo que indirectamente ayuda a salvar vidas al permitir intervenciones más rápidas.
-
-Por otro lado, los análisis sobre el impacto de los sistemas de salud privados (isapre) y públicos (fonasa) no han proporcionado conclusiones definitivas debido a la baja representatividad de las muestras en las comunas donde predomina isapre. Esto deja abierta la pregunta sobre la efectividad comparativa entre estos sistemas en la lucha contra la pandemia, aunque los resultados actuales no permiten inferir causalidad.
 
 En resumen, el estudio confirma que las diferencias socioeconómicas entre comunas tienen un efecto directo en la mortalidad por COVID-19. Las comunas más vulnerables sufren peores resultados sanitarios debido a una combinación de factores como el bajo testeo, el acceso limitado a servicios médicos y la alta vulnerabilidad social. Si bien la vacunación es un factor importante en la reducción de la mortalidad, su impacto está condicionado por la presencia de otros determinantes sociales de la salud. Este análisis subraya la necesidad de una intervención más equitativa en la distribución de recursos sanitarios, con un enfoque especial en las comunas de mayor pobreza, para reducir las desigualdades en salud y mitigar el impacto de futuras crisis sanitarias.
 
@@ -142,5 +148,5 @@ En resumen, aunque este análisis proporciona información valiosa sobre el impa
 - Liz González
 - Isidora Mora 
 - Daniela Cerda 
-
+- Benjamín Ubilla
 ---
