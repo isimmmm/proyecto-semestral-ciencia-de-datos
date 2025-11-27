@@ -162,6 +162,14 @@
             font-size: 0.9rem;
         }
         
+        .analysis-text {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-left: 4px solid var(--secondary);
+            margin: 1rem 0;
+            font-style: italic;
+        }
+        
         .highlight-box {
             background: linear-gradient(135deg, var(--secondary), #2980b9);
             color: white;
@@ -215,34 +223,16 @@
             margin-bottom: 0.5rem;
         }
         
+        .no-contributions {
+            opacity: 0.6;
+        }
+        
         footer {
             background-color: var(--primary);
             color: white;
             text-align: center;
             padding: 2rem 0;
             margin-top: 3rem;
-        }
-        
-        .methodology-steps {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-        
-        .step {
-            flex: 1;
-            min-width: 200px;
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-left: 4px solid var(--secondary);
-        }
-        
-        .step h4 {
-            color: var(--primary);
-            margin-bottom: 0.5rem;
         }
         
         .research-question {
@@ -257,18 +247,6 @@
         
         .research-question h3 {
             color: white;
-            margin-bottom: 1rem;
-        }
-        
-        .data-sources {
-            background: var(--light);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-        }
-        
-        .data-sources h4 {
-            color: var(--primary);
             margin-bottom: 1rem;
         }
         
@@ -298,7 +276,6 @@
     
     <div class="nav-tabs">
         <div class="tab active" data-tab="intro">Introducción</div>
-        <div class="tab" data-tab="methodology">Metodología</div>
         <div class="tab" data-tab="visualizations">Visualizaciones</div>
         <div class="tab" data-tab="findings">Hallazgos</div>
         <div class="tab" data-tab="conclusions">Conclusiones</div>
@@ -318,45 +295,6 @@
                     <h3>Propósito del estudio</h3>
                     <p>Analizar cómo varió el impacto del COVID-19 según el nivel socioeconómico comunal permite comprender mejor las <strong>brechas sociales que la crisis sanitaria amplificó</strong>. Este proyecto busca <strong>identificar patrones y relaciones</strong> entre variables como pobreza, mortalidad, vacunación, movilidad y cobertura de testeo en las comunas de la Región Metropolitana entre 2020 y 2022 para poder responder la pregunta principal:</p>
                     <p><strong>¿Cuál es la relación entre el nivel socioeconómico comunal y el impacto del COVID-19 en la Región Metropolitana?</strong></p>
-                </div>
-            </div>
-        </div>
-        
-        <div id="methodology" class="tab-content">
-            <h2>Metodología del proyecto</h2>
-            <div class="card">
-                <p>El proyecto tuvo un enfoque completo de análisis de datos, iniciando con la obtención y limpieza de los datos, hasta llegar a la generación de visualizaciones y conclusiones. Siempre con el objetivo de evaluar la relación entre el nivel socioeconómico comunal y el impacto del COVID-19 en la Región Metropolitana de Chile.</p>
-                
-                <h3>Fuentes de datos</h3>
-                <div class="data-sources">
-                    <p>Se integraron múltiples fuentes públicas oficiales:</p>
-                    <ul class="conclusion-list">
-                        <li><strong>Datos COVID-19:</strong> OBSERVA, Gobierno de Chile</li>
-                        <li><strong>Indicadores socioeconómicos:</strong> Encuesta CASEN 2017, 2020, 2022</li>
-                        <li><strong>Datos poblacionales:</strong> CENSO 2017 y 2024 (INE)</li>
-                        <li><strong>Egresos hospitalarios:</strong> Sistema ISAPRE (Superintendencia de Salud) y FONASA (DEIS)</li>
-                        <li><strong>Información geográfica:</strong> Mapa GeoJSON de comunas</li>
-                    </ul>
-                </div>
-                
-                <h3>Etapas del estudio</h3>
-                <div class="methodology-steps">
-                    <div class="step">
-                        <h4>1. Recolección de datos</h4>
-                        <p>Integración de múltiples fuentes públicas oficiales para obtener una visión comprehensiva del fenómeno.</p>
-                    </div>
-                    <div class="step">
-                        <h4>2. Proceso ETL</h4>
-                        <p>Extracción, transformación (homologación, limpieza, cálculo de indicadores) y carga de datos en DataFrames estructurados.</p>
-                    </div>
-                    <div class="step">
-                        <h4>3. Visualización y análisis</h4>
-                        <p>Creación de mapas territoriales, gráficos de barras, dispersión y análisis correlacional para identificar patrones.</p>
-                    </div>
-                    <div class="step">
-                        <h4>4. Interpretación</h4>
-                        <p>Análisis de patrones consistentes para responder la pregunta central sobre la relación entre NSE e impacto del COVID-19.</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -383,7 +321,10 @@
                         <div class="data-source">
                             <strong>Fuente:</strong> Datos COVID-19 OBSERVA y CASEN 2017-2022
                         </div>
-                        <p>El NSE (Nivel Socioeconómico del hogar) se clasifica en "Bajo", "Bajo-Medio", "Medio", "Medio-alto", "Alto". La mortalidad muestra una diferencia consistente según el grupo socioeconómico, siendo el grupo "Alto" el menos afectado. Se observa un gradiente donde a menor nivel socioeconómico, mayor mortalidad por COVID-19.</p>
+                        <div class="analysis-text">
+                            <p><strong>Definición de NSE:</strong> El NSE (Nivel Socioeconómico del hogar) se clasifica en "Bajo", "Bajo-Medio", "Medio", "Medio-alto", "Alto", siendo Alto los hogares más privilegiados socioeconomicamente hablando. Para este gráfico, hemos sacado el porcentaje de NSE de cada comuna (por promedios en ganancia) y lo hemos comparado a la mortalidad en porcentaje de población por todas las comunas de la Región Metropolitana.</p>
+                            <p>La mortalidad muestra una diferencia ligera pero consistente según el grupo socioeconómico al que pertenece, siendo Alto el menos afectado.</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -394,7 +335,10 @@
                         <div class="data-source">
                             <strong>Fuente:</strong> Elaboración propia basada en datos OBSERVA COVID-19 y CASEN
                         </div>
-                        <p>La tasa de mortalidad por COVID-19 muestra una correlación positiva con el índice de pobreza (a mayor pobreza, mayor mortalidad) y una correlación negativa con el ingreso promedio (a mayores ingresos, menor mortalidad). Estas correlaciones sugieren que las comunas con mayores niveles de pobreza tienden a tener mayor mortalidad, reflejando la vulnerabilidad de los sectores más pobres.</p>
+                        <div class="analysis-text">
+                            <p><strong>Análisis de correlaciones:</strong> La tasa de mortalidad por COVID-19 muestra una correlación positiva con el índice de pobreza, lo cual nos indica que a mayor pobreza, mayor tasa de mortalidad. Por otro lado, la relación con el ingreso promedio muestra una correlación negativa, indicando que las comunas con ingresos más altos tienden a tener menores tasas de mortalidad.</p>
+                            <p>Estas correlaciones sugieren que las comunas con mayores niveles de pobreza tienden a tener mayor mortalidad, lo que refleja la vulnerabilidad de los sectores más pobres frente a la pandemia. Además, comunas con ingresos más altos parecen tener menos mortalidad, posiblemente debido a mejores condiciones de salud y acceso a servicios médicos.</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -405,7 +349,9 @@
                         <div class="data-source">
                             <strong>Fuente:</strong> Datos de vacunación OBSERVA y CASEN 2017-2022
                         </div>
-                        <p>Se observa una relación entre la cobertura de vacunación y el NSE, siendo las categorías "Medio" y "Bajo-medio" aquellas con menor cobertura de vacunación. Las comunas de nivel socioeconómico alto muestran una distribución más concentrada y con valores generalmente más altos en cobertura de vacunación.</p>
+                        <div class="analysis-text">
+                            <p>Se observa una relación entre la cobertura de vacunación y el NSE, siendo las categorías "Medio" y "Bajo-medio" aquellas con menor cobertura de vacunación (teniendo la misma media). Las comunas de nivel socioeconómico alto muestran una distribución más concentrada y con valores generalmente más altos en cobertura de vacunación.</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -416,7 +362,13 @@
                         <div class="data-source">
                             <strong>Fuente:</strong> Elaboración propia basada en datos OBSERVA COVID-19 y CASEN
                         </div>
-                        <p>Este gráfico muestra el porcentaje de vacunación de primera dosis versus la mortalidad por comuna, diferenciado por NSE. Se observa que la mortalidad se reduce notablemente en comunas de altos ingresos, incluso en aquellas con menor cobertura de vacunación. Las comunas de nivel medio y bajo-medio muestran patrones inconsistentes en mortalidad, sugiriendo que otros factores además de la vacunación influyen en los resultados.</p>
+                        <div class="analysis-text">
+                            <p><strong>Análisis detallado:</strong> Este gráfico muestra el porcentaje de vacunación de la primera dosis de la vacuna contra el covid-19 vs la mortalidad por comuna, y hace una comparación a la mortalidad y el NSE (Nivel Socioeconómico de las comunas).</p>
+                            <p>Como podemos notar, ya con los datos del NSE por comuna, se ve una relación entre la cantidad de dosis administradas de la vacuna por porcentaje de población y su NSE, siendo las categorías de "Medio" y "Bajo-medio" aquellas con menos vacunas (teniendo la misma media). Además, podemos notar que la mortalidad se ve reducida notoriamente en comunas de altos ingresos, incluso en aquellas comunas con más bajo rango de vacunación.</p>
+                            <p>Luego, exceptuando una comuna, el NSE "Medio-alto" se ve más afectado que las comunas "Alto", pero sin pasar el rango de 0.175 aprox. de mortalidad, sin embargo las comunas Medio y Bajo-medio no siguen patrones consistentes en cuanto a mortalidad, siendo ruidosas en el mapa, sobretodo la categoría "Medio".</p>
+                            <p>Con esto no podemos concluir que las vacunas hayan sido un causante de la baja mortalidad, sin embargo es válido plantearnos la pregunta si en realidad se distribuyen mejor los recursos a las comunas con alto NSE y es por esto la notoria subida en % de vacunación, además de presentar un patrón persistente de baja mortalidad al contrario de las otras comunas, que van de Medio-alto a Bajo-medio, donde más se nota la diferencia en Medio y Bajo-medio.</p>
+                            <p>Las variables que crean este fenómeno no se pueden concluir con nuestras bases de datos actuales, pero sería interesante, a futuro, investigar si esto se debió a diferencias en centros médicos, estilos de vida (como trabajos), exposición a lugares públicos como el transporte, etc.</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -427,7 +379,10 @@
                         <div class="data-source">
                             <strong>Fuente:</strong> Datos OBSERVA COVID-19 y CASEN 2017-2022
                         </div>
-                        <p>El porcentaje de cobertura de casos sospechosos muestra un desempeño excepcional en todas las comunas (mayor al 80%, con promedio aproximado del 90%). Las diferencias entre niveles socioeconómicos son mínimas y podrían considerarse clínicamente irrelevantes, indicando que el sistema logró coberturas equitativas en todo el espectro socioeconómico para la identificación de casos sospechosos.</p>
+                        <div class="analysis-text">
+                            <p>El porcentaje de cobertura de casos sospechosos es más bajo de lo normal en el sector Alto, mientras que en los otros niveles NSE se mantiene bastante estable, siendo Bajo-medio el único con un outlier bastante más abajo que los demás, y una media más baja que Medio-alto y Medio (pero más alta que Alto).</p>
+                            <p>Sin embargo, incluso con el outlier más bajo, se tiene un muy buen porcentaje de cobertura en todas las comunas: mayor al 80%, y un promedio aprox. del 90%. Por lo tanto, las diferencias, al ser de tan poco rango, podrían considerarse son clínicamente irrelevantes en el contexto de un sistema que logró coberturas excepcionales (>90%) de manera equitativa en todo el espectro socioeconómico. No así con las vacunas.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -449,8 +404,8 @@
                 
                 <div class="highlight-box">
                     <h3>Interpretación integral</h3>
-                    <p>El estudio confirma que las diferencias socioeconómicas entre comunas tienen un efecto directo en la mortalidad por COVID-19. Las comunas más vulnerables sufren peores resultados sanitarios debido a una combinación de factores como el bajo testeo, el acceso limitado a servicios médicos y la alta vulnerabilidad social.</p>
-                    <p>Si bien la vacunación es un factor importante en la reducción de la mortalidad, su impacto está condicionado por la presencia de otros determinantes sociales de la salud. Este análisis subraya la necesidad de una intervención más equitativa en la distribución de recursos sanitarios, con un enfoque especial en las comunas de mayor pobreza.</p>
+                    <p>Aunque la relación entre vacunación y mortalidad se muestra débil, los gráficos indican que la mortalidad no puede explicarse únicamente por la vacunación. Otros factores, como la edad de la población, el testeo y la calidad del sistema de salud, juegan un papel crucial en determinar los resultados sanitarios.</p>
+                    <p>En particular, notamos que a pesar de que la cobertura de casos sospechosos fue excepcional en todas las comunas, aún así el testeo se revela como un mediador clave, ya que las comunas con mayores tasas de testeo logran detectar más casos y, por lo tanto, mantienen una menor mortalidad proporcional. Esto subraya la importancia de diagnosticar a tiempo y prevenir el subdiagnóstico, lo que indirectamente ayuda a salvar vidas al permitir intervenciones más rápidas.</p>
                 </div>
             </div>
         </div>
@@ -462,7 +417,7 @@
                     <h3>¿Cuál es la relación entre el nivel socioeconómico comunal y el impacto del COVID-19 en la Región Metropolitana de Chile?</h3>
                 </div>
                 
-                <p>La relación entre el nivel socioeconómico comunal y el impacto del COVID-19 en la Región Metropolitana de Chile es clara y consistente: <strong>las comunas con menor NSE y menores ingresos han sufrido un mayor impacto sanitario</strong>, con más muertes y menor acceso a recursos sanitarios.</p>
+                <p>La relación entre el nivel socioeconómico comunal y el impacto del COVID-19 en la Región Metropolitana de Chile es clara: <strong>las comunas con menor NSE y menores ingresos han sufrido un mayor impacto sanitario, con más muertes y menor acceso a recursos sanitarios.</strong> Esto se debe a múltiples factores, como el bajo testeo, el acceso limitado a atención médica y las condiciones sociales que agravan el riesgo de contagio.</p>
                 
                 <h3>Factores explicativos identificados</h3>
                 <ul class="conclusion-list">
@@ -474,12 +429,12 @@
                 </ul>
                 
                 <h3>Contraste entre comunas</h3>
-                <p>Por el contrario, <strong>las comunas con mayor NSE y mayores ingresos han tenido un menor impacto</strong>, gracias a un mayor acceso a vacunas, mejor calidad del sistema de salud, mayores recursos para prevenir y tratar la enfermedad, y condiciones de vida que facilitaron el distanciamiento social y el teletrabajo.</p>
+                <p>Por el contrario, <strong>las comunas con mayor NSE y mayores ingresos han tenido un menor impacto</strong>, gracias a un mayor acceso a vacunas, mejor calidad del sistema de salud y mayores recursos para prevenir y tratar la enfermedad, y condiciones de vida que facilitaron el distanciamiento social y el teletrabajo.</p>
                 
                 <div class="highlight-box">
                     <h3>Conclusión final</h3>
                     <p><strong>La desigualdad socioeconómica juega un rol crucial en el impacto del COVID-19</strong>, afectando la mortalidad y la capacidad de respuesta sanitaria en las comunas más vulnerables. La pandemia no ha sido un fenómeno meramente biológico, sino que ha actuado como un <strong>amplificador de desigualdades preexistentes</strong>, revelando las profundas brechas en nuestro sistema de salud y protección social.</p>
-                    <p>Estos hallazgos subrayan la necesidad urgente de <strong>políticas sanitarias con enfoque territorial y equitativo</strong> que prioricen a las comunidades más vulnerables en la preparación y respuesta a futuras crisis sanitarias.</p>
+                    <p>En resumen, el estudio confirma que las diferencias socioeconómicas entre comunas tienen un efecto directo en la mortalidad por COVID-19. Las comunas más vulnerables sufren peores resultados sanitarios debido a una combinación de factores como el bajo testeo, el acceso limitado a servicios médicos y la alta vulnerabilidad social. Si bien la vacunación es un factor importante en la reducción de la mortalidad, su impacto está condicionado por la presencia de otros determinantes sociales de la salud. Este análisis subraya la necesidad de una intervención más equitativa en la distribución de recursos sanitarios, con un enfoque especial en las comunas de mayor pobreza, para reducir las desigualdades en salud y mitigar el impacto de futuras crisis sanitarias.</p>
                 </div>
             </div>
         </div>
@@ -491,32 +446,19 @@
                 
                 <h3>Principales limitaciones</h3>
                 
-                <div class="step">
+                <div class="analysis-text">
                     <h4>Subdiagnóstico y falta de datos completos</h4>
-                    <p>En las comunas con menos recursos, el acceso a pruebas y la capacidad de diagnóstico son limitados, lo que significa que el número real de casos podría ser mayor de lo reportado. Este sesgo puede llevar a subestimar la mortalidad o la distribución de los casos en ciertas áreas, distorsionando la interpretación de la relación entre variables.</p>
+                    <p>Un problema clave es el subdiagnóstico de los casos de COVID-19. En las comunas con menos recursos, el acceso a pruebas y la capacidad de diagnóstico son limitados, lo que significa que el número real de casos podría ser mucho mayor de lo reportado. Este sesgo puede llevar a subestimar la mortalidad o la distribución de los casos en ciertas áreas, distorsionando la interpretación de la relación entre vacunación y mortalidad. Al basarse en datos incompletos o no representativos, las conclusiones pueden ser erróneas, afectando la toma de decisiones políticas o de salud pública.</p>
+                    
+                    <h4>Falta de variables</h4>
+                    <p>Aunque se identificaron factores importantes como la vacunación y el nivel socioeconómico, muchas otras variables confusoras podrían haber influido en los resultados. Factores como la edad de la población, las enfermedades preexistentes, el acceso a atención médica, no fueron evaluados. Estos factores podrían estar influyendo de manera significativa en la mortalidad por COVID-19 y no fueron controlados en el análisis. Como se menciona en el libro Weapons of Math Destruction, la falta de variables adecuadas y la simplificación de modelos pueden exacerbar las desigualdades, especialmente cuando se hacen recomendaciones basadas en modelos o datos incompletos.</p>
+                    
+                    <h4>Riesgo de la automatización y los modelos predictivos</h4>
+                    <p>Actualmente la inteligencia artificial y los modelos predictivos se usan cada vez más en la toma de decisiones, es importante recordar que el uso de algoritmos sin transparencia o sin una supervisión adecuada puede perpetuar sesgos y agravar las desigualdades. Si las recomendaciones para asignar recursos (como vacunas, pruebas o tratamiento) se basan en modelos matemáticos sin tener en cuenta los contextos locales o las desigualdades previas, estos modelos pueden reproducir las mismas injusticias que se buscan corregir, al centrarse en la eficiencia sin considerar las implicaciones sociales y éticas.</p>
                 </div>
-                
-                <div class="step">
-                    <h4>Falta de variables relevantes</h4>
-                    <p>Factores como la edad de la población, las enfermedades preexistentes, la densidad poblacional y el acceso a atención médica especializada no fueron completamente evaluados. Estos factores podrían estar influyendo significativamente en la mortalidad por COVID-19 y no fueron controlados en el análisis.</p>
-                </div>
-                
-                <div class="step">
-                    <h4>Riesgo de la automatización y modelos predictivos</h4>
-                    <p>El uso de algoritmos sin transparencia o sin supervisión adecuada puede perpetuar sesgos y agravar desigualdades. Si las recomendaciones para asignar recursos se basan en modelos matemáticos sin considerar contextos locales, pueden reproducir las mismas injusticias que se buscan corregir.</p>
-                </div>
-                
-                <h3>Consideraciones para futuros estudios</h3>
-                <ul class="conclusion-list">
-                    <li>Incluir variables adicionales como edad, comorbilidades, condiciones de vivienda y ocupación laboral.</li>
-                    <li>Realizar análisis longitudinales para comprender la evolución temporal de las desigualdades.</li>
-                    <li>Incorporar perspectivas cualitativas que complementen los hallazgos cuantitativos.</li>
-                    <li>Considerar el contexto específico de cada comuna en las interpretaciones.</li>
-                    <li>Desarrollar modelos que capturen la complejidad de los determinantes sociales de salud.</li>
-                </ul>
                 
                 <div class="highlight-box">
-                    <p><strong>Nota importante:</strong> Los problemas sociales son multi-factoriales y no pueden ser simplificados. Merecen un estudio cuidadoso y profundo de causales y planeación que considere la complejidad de los fenómenos sociales y de salud.</p>
+                    <p><strong>Consideración final:</strong> Aunque este análisis proporciona información valiosa sobre el impacto del COVID-19 y la relación con el nivel socioeconómico, las limitaciones de los datos y los sesgos inherentes en los modelos utilizados deben ser cuidadosamente considerados antes de implementar políticas basadas en estos resultados. Es fundamental que cualquier solución propuesta tenga en cuenta la distribución equitativa de recursos, la prevención de futuros sesgos y una visión inclusiva y justa que no profundice las desigualdades existentes. El uso de modelos predictivos y decisiones basadas en datos debe ir acompañado de una supervisión ética y de una evaluación crítica de las posibles consecuencias no deseadas que podrían surgir, y siempre comprendiendo que los problemas sociales son multi-factoriales, no pueden ser simplificados, y merecen un estudio cuidadoso y profundo de causales y planeación.</p>
                 </div>
             </div>
         </div>
@@ -542,11 +484,11 @@
                         <div class="team-role">Datos COVID-19 y Poblacionales</div>
                         <p>Responsable del análisis de datos COVID-19, estimaciones poblacionales y procesamiento de datos censales.</p>
                     </div>
-                </div>
-                
-                <div class="highlight-box">
-                    <h3>Metodología de trabajo</h3>
-                    <p>El equipo trabajó de manera colaborativa en todas las etapas del proyecto, desde la definición metodológica hasta el análisis conjunto de resultados. Cada integrante aportó desde su especialidad para construir una visión integral del fenómeno estudiado.</p>
+                    <div class="team-member no-contributions">
+                        <h4>Benjamín Ubilla</h4>
+                        <div class="team-role">Sin aportes al proyecto</div>
+                        <p>No realizó contribuciones al desarrollo de este trabajo.</p>
+                    </div>
                 </div>
             </div>
         </div>
